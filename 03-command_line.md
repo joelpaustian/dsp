@@ -20,22 +20,22 @@ Here's a list of items with which you should be familiar:
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > > This cheat sheet summarizes the codeacademy.org lesson on command line  
-`pwd` prints working directory  
-`cd` changes directory  
-`mkdir` makes new directory  
-`rm` removes files (add -r to remove folders)  
-`ls` lists files in current directory (add -a to see hidden files)  
-`cp` copies files and directories  
-`touch` creates an empty new file; specify filename  
-`mv` moves a file from one location to another, or renames file  
-`echo` accepts a standard input and returns a standard output (e.g. `echo "Hello" > outfile.txt` to create or overwrite, `echo "Hello" >> outfile.txt` to append file)  
-`cat` displays the contents of a text file  
-`|` pipes: use with other commands to direct ouput to another command  
-`grep` global regular expression print; search for a text pattern and output matches (-i to make case insensitive)  
-`sed` stream editor; accepts standard input and modifies it based on an expression, then displays output (useful for replacing text patterns en masse; use /g for global replacement)  
-Others reviewed: uniq, sort, source, alias, env  
-Environment settings: edit ~/.bash_profile to load new commands when a session starts... eg. `alias ll ls -al`, `export USER='Jane Doe'`  
-Environment Variables reviewed: USER, HOME, PS1, PATH
+1. `pwd` prints working directory  
+2. `cd` changes directory  
+3. `mkdir` makes new directory  
+4. `rm` removes files (add -r to remove folders)  
+5. `ls` lists files in current directory (add -a to see hidden files)  
+6. `cp` copies files and directories  
+7. `touch` creates an empty new file; specify filename  
+8. `mv` moves a file from one location to another, or renames file  
+9. `echo` accepts a standard input and returns a standard output (e.g. `echo "Hello" > outfile.txt` to create or overwrite, `echo "Hello" >> outfile.txt` to append file)  
+10. `cat` displays the contents of a text file  
+11. `|` pipes: use with other commands to direct ouput to another command  
+12. `grep` global regular expression print; search for a text pattern and output matches (-i to make case insensitive)  
+13. `sed` stream editor; accepts standard input and modifies it based on an expression, then displays output (useful for replacing text patterns en masse; use /g for global replacement)  
+14. Others reviewed: uniq, sort, source, alias, env  
+15. Environment settings: edit ~/.bash_profile to load new commands when a session starts... eg. `alias ll ls -al`, `export USER='Jane Doe'`  
+16. Environment Variables reviewed: USER, HOME, PS1, PATH
 
 ---
 
