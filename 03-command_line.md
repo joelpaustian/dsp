@@ -19,35 +19,36 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > This cheat sheet summarizes the codeacademy.org lesson on command line
-`pwd` prints working directory
-`cd` changes directory
-`mkdir` makes new directory
-`rm` removes files (add -r to remove folders)
-`ls` lists files in current directory (add -a to see hidden files)
-`cp` copies files and directories
-`touch` creates an empty new file; specify filename
-`mv` moves a file from one location to another, or renames file
-`echo` accepts a standard input and returns a standard output (e.g. `echo "Hello" > outfile.txt` to create or overwrite, `echo "Hello" >> outfile.txt` to append file)
-`cat` displays the contents of a text file
-`|` pipes: use with other commands to direct ouput to another command
-`grep` global regular expression print; search for a text pattern and output matches (-i to make case insensitive)
-`sed` stream editor; accepts standard input and modifies it based on an expression, then displays output (useful for replacing text patterns en masse; use /g for gloabl replacement)
-Others reviewed: uniq, sort, source, alias, env
-Environment settings: edit ~/.bash_profile to load new commands when a session starts... eg. `alias ll ls -al`, `export USER='Jane Doe'` 
+> > This cheat sheet summarizes the codeacademy.org lesson on command line  
+`pwd` prints working directory  
+`cd` changes directory  
+`mkdir` makes new directory  
+`rm` removes files (add -r to remove folders)  
+`ls` lists files in current directory (add -a to see hidden files)  
+`cp` copies files and directories  
+`touch` creates an empty new file; specify filename  
+`mv` moves a file from one location to another, or renames file  
+`echo` accepts a standard input and returns a standard output (e.g. `echo "Hello" > outfile.txt` to create or overwrite, `echo "Hello" >> outfile.txt` to append file)  
+`cat` displays the contents of a text file  
+`|` pipes: use with other commands to direct ouput to another command  
+`grep` global regular expression print; search for a text pattern and output matches (-i to make case insensitive)  
+`sed` stream editor; accepts standard input and modifies it based on an expression, then displays output (useful for replacing text patterns en masse; use /g for global replacement)  
+Others reviewed: uniq, sort, source, alias, env  
+Environment settings: edit ~/.bash_profile to load new commands when a session starts... eg. `alias ll ls -al`, `export USER='Jane Doe'`  
 Environment Variables reviewed: USER, HOME, PS1, PATH
+
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  lists files and directories in cwd (non-hidden)
-`ls -a`  lists all files and directories in cwd (including hidden)
-`ls -l`  lists contents in long format
-`ls -lh`  lists contents in long format, with human readable filesizes
-`ls -lah` lists all contents in long format, with human readable filesizes 
-`ls -t`  order files and directories by the time they were modified
-`ls -Glp`  lists files in long format, appends indicator (such as / for folders), inhibits display of group information
+`ls`  lists files and directories in cwd (non-hidden)  
+`ls -a`  lists all files and directories in cwd (including hidden)  
+`ls -l`  lists contents in long format  
+`ls -lh`  lists contents in long format, with human readable filesizes  
+`ls -lah` lists all contents in long format, with human readable filesizes  
+`ls -t`  order files and directories by the time they were modified  
+`ls -Glp`  lists files in long format, appends indicator (such as / for folders), inhibits display of group information  
 
 > > See above
 
@@ -57,12 +58,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> >
-`ls -1` displays each entry on a line
-`ls -R` displays subdirectories as well
-`ls -m` display files as comma separated list
-`ls -u` display by file access time
-`ls -o` long format but exclude group name
+> >`ls -1` displays each entry on a line  
+`ls -R` displays subdirectories as well  
+`ls -m` display files as comma separated list  
+`ls -u` display by file access time  
+`ls -o` long format but exclude group name  
 
 ---
 
@@ -70,9 +70,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > xargs accepts a standard input and executes commands on it.  For example, here I used it to copy all the files containing the word "file" into a subdirectory:
-`mkdir copytest`
+> > xargs accepts a standard input and executes commands on it.  For example, here I used it to copy all the files containing the word "file" into a subdirectory:  
+`mkdir copytest`  
 `grep -il "file" *.md | xargs -I{} cp {} ./copytest`
-
- 
-
