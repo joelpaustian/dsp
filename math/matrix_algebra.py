@@ -1,3 +1,46 @@
 # Matrix Algebra
+import numpy as np
 
-PLACE YOUR CODE HERE
+A=np.array([(1,2,3),(2,7,4)])
+B=np.array([(1,-1),(0,1)])
+C=np.array([(5,-1),(9,1),(6,0)])
+D=np.array([(3,-2,-1),(1,2,3)])
+u=np.array([(6,2,-3,5)])
+v=np.array([(3,5,-1,4)])
+w=np.array([(1,8,0,5)]).T
+
+#Print answers to problem 1
+print('Problem 1')
+print('1.1. Dimensions of A: '+str(A.shape))
+print('1.2. Dimensions of B: '+str(B.shape))
+print('1.3. Dimensions of C: '+str(C.shape))
+print('1.4. Dimensions of D: '+str(D.shape))
+print('1.5. Dimensions of u: '+str(u.shape))
+print('1.6. Dimensions of w: '+str(w.shape))
+print('\n')
+#Print answers to problem 2
+print('Problem 2')
+print('2.1. u+v='+str(u+v))
+print('2.2. u-v='+str(u-v))
+print('2.3. 6*u='+str(6*u))
+print('2.4. u and v dot product: '+str(np.dot(u,v.T)))
+print('2.5. Norm of u: '+str(np.linalg.norm(u)))
+print('\n')
+print('Problem 3')
+print('3.1. A+C= not defined')
+print('3.2. A-C^T=')
+print(A-C.T)
+print('3.3. C^T+3D=')
+print(C.T+3*D)
+print('3.4. BA= ')
+print(np.dot(B,A))
+print('3.5. BA^T= not defined')
+print('3.6. BC= not defined')
+print('3.7. CB=')
+print(np.dot(C,B))
+print('3.8. B^4=')
+print((np.dot(np.dot(B,B),np.dot(B,B))))
+print('3.9. AA^T= ')
+print(np.dot(A,A.T))
+print('3.10. D^TD= ')
+print(np.dot(D.T,D))
