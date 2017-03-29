@@ -43,7 +43,7 @@ Review the Jupyter Notebook [`1_pandas_jeopardy_example.ipynb`](python/pandas/1_
 
 
 
-My answer is  [here](python/pandas/33_pandas_olive_answers_joelp.ipynb)
+My answer is  [here](python/pandas/3_pandas_olive_answers_joelp.ipynb)
 ---
 
 ## Optional Pandas Topics:  To Explore Further
